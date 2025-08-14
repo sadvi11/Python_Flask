@@ -100,16 +100,33 @@ def career():
    title4="product analyst"
 
    return render_template('career.html', title1=title1,title2=title2,title3=title3,title4=title4)
-
-
-
-
-
-
-
-
-
-
-
 if __name__ == '__main__':
-    app.run(host='127.0.0.1', port=5001, debug=True)
+      
+       app.run(debug = True,port=5002)
+
+
+
+
+
+
+
+
+
+
+
+    
+
+#dynamic greeting app
+# What pages do we need?
+#'/' - Home page with form
+'/greet' - Process form and show greeting
+# OR
+#'/' - Handle both form display AND processing
+
+#design greeting logic
+# What makes a greeting dynamic?
+# Time of day (morning/afternoon/evening)
+# User's name (personalization)
+- #Maybe day of week or special occasions?
+
+

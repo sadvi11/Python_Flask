@@ -1,0 +1,11 @@
+ version: '3.3'
+ services:
+  python_flask:
+    build: .
+    image: sadhvi11/python
+    restart: unless-stopped
+    privileged: true
+    user: root
+    ports:
+      - 8000:5002
+    container_name: container-python
